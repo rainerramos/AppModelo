@@ -32,8 +32,8 @@ namespace DevIO.UI.Site
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
-          
+            }                        
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
