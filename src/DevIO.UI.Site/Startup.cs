@@ -52,7 +52,7 @@ namespace DevIO.UI.Site
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
-            {                              
+            {                            
 
                 endpoints.MapControllerRoute(
                     name: "areas",
