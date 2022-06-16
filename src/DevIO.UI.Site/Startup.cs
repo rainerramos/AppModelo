@@ -1,3 +1,4 @@
+using DevIO.UI.Site.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -34,7 +35,9 @@ namespace DevIO.UI.Site
            });    
                        
 
-            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);                      
+            services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
+
+            services.AddTransient<IPedidoRepository, PedidoRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
