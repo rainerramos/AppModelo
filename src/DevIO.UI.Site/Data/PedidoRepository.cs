@@ -12,6 +12,6 @@ namespace DevIO.UI.Site.Data
 
     public interface IPedidoRepository
     {
-        PedidoRepository ObterPedido();
+        Pedido ObterPedido();
     }
 }
